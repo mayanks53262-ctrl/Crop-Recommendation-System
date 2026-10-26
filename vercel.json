@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "src/api.py": {
+      "includeFiles": "{models/selected_model.joblib,data/raw/Crop_recommendation.csv,data/crop_catalog/crops.json}",
+      "excludeFiles": "{frontend/**,notebooks/**,reports/**,tests/**,src/test_*.py}"
+    }
+  }
+}

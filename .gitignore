@@ -1,0 +1,54 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+node_modules/
+frontend/dist/
+.vercel/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local datasets and generated model artifacts
+# Keep source data out of Git unless its provenance, license, and size are appropriate.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/Crop_recommendation.csv
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+models/*
+!models/.gitkeep
+!models/selected_model.joblib
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*

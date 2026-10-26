@@ -1,0 +1,159 @@
+{
+  "brand": "Fieldnote",
+  "brandSubtitle": "Crop Recommendation System",
+  "nav": {
+    "home": "Home",
+    "how": "How it works",
+    "recommendation": "Recommendation",
+    "assessment": "Field details",
+    "profitability": "Economics",
+    "crops": "Crop information",
+    "language": "Language",
+    "menu": "Open navigation",
+    "closeMenu": "Close navigation"
+  },
+  "hero": {
+    "eyebrow": "A student machine-learning project",
+    "title": "A clearer starting point for your next crop decision.",
+    "body": "Explore a crop label predicted from seven soil and environmental measurements. The result is a model output, not a guarantee of local suitability.",
+    "primary": "Get a recommendation",
+    "secondary": "How it works",
+    "artLabel": "Illustration of fields, hills, sun, and growing plants",
+    "artBadge": "Seven inputs · one model output",
+    "modelStatus": "Model status",
+    "online": "API connected",
+    "offline": "API unavailable"
+  },
+  "how": {
+    "eyebrow": "Simple by design",
+    "title": "From measurements to a model suggestion",
+    "body": "The system uses the same seven named inputs that were used to train its current classifier.",
+    "step1Title": "Enter measurements",
+    "step1Body": "Provide the available nutrient and environmental values in the dataset's measurement scales.",
+    "step2Title": "Model evaluates",
+    "step2Body": "The saved Random Forest estimates a crop label from the values you provide.",
+    "step3Title": "Review the output",
+    "step3Body": "See the model's prediction, alternative scores when available, and any observed-range warnings."
+  },
+  "form": {
+    "eyebrow": "Independent ML model",
+    "title": "Crop prediction",
+    "subtitle": "This classifier runs independently of the unavailable Agricultural Field Assessment workflow.",
+    "loadSample": "Load sample data",
+    "measurementNote": "N, P, and K refer to soil nutrient measurements in the dataset, not fertilizer application doses.",
+    "noMax": "Use values in the same scales as the training data. There are no arbitrary upper limits.",
+    "submit": "Run crop prediction",
+    "loading": "Running crop prediction…",
+    "required": "Complete all seven required fields with valid numbers.",
+    "invalid": "Enter a finite number in every field. All values except temperature must be non-negative.",
+    "sampleLoaded": "A real feature row from the project dataset was loaded."
+  },
+  "fields": {
+    "nitrogen": "Nitrogen (N)",
+    "phosphorus": "Phosphorus (P)",
+    "potassium": "Potassium (K)",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "ph": "Soil pH",
+    "rainfall": "Rainfall"
+  },
+  "fieldHints": {
+    "N": "Soil nutrient value used by the dataset",
+    "P": "Soil nutrient value used by the dataset",
+    "K": "Soil nutrient value used by the dataset",
+    "temperature": "Negative values are accepted by the API",
+    "humidity": "Enter a non-negative numeric value",
+    "ph": "Enter a non-negative numeric value",
+    "rainfall": "Enter a non-negative numeric value"
+  },
+  "errors": {
+    "validation": "The API could not accept these values. Check the fields and try again.",
+    "network": "The API could not be reached. Check that the backend is running and try again.",
+    "unavailable": "The prediction service is temporarily unavailable. Please try again later.",
+    "unexpected": "The service returned an unexpected response. Please try again.",
+    "fields": "Fields to check: {{fields}}."
+  },
+  "results": {
+    "eyebrow": "Your model result",
+    "title": "Predicted crop label",
+    "caveat": "This is a preliminary, data-driven model suggestion for the values entered—not a guarantee of suitability or success.",
+    "alternatives": "Other model output labels (not field recommendations)",
+    "matchScore": "Model output score",
+    "scoreNote": "Scores describe the model's output distribution. They are not probabilities of crop survival, yield, or agricultural success.",
+    "warningsTitle": "Outside observed training range",
+    "warningsIntro": "This valid input was still evaluated. These observed ranges are not universal safe or unsafe agricultural limits.",
+    "rangeWarning": "Value {{value}} is outside the training-data range {{minimum}} to {{maximum}}.",
+    "edit": "Edit inputs and try again"
+  },
+  "catalog": {
+    "eyebrow": "Model label reference",
+    "title": "The crops this model knows by label",
+    "subtitle": "A simple reference for the crop names supported by the current benchmark model.",
+    "supportedLabel": "Current model label",
+    "note": "This list describes model labels, not a complete crop catalog or regional growing guide.",
+    "knowledgeOnlyTitle": "Knowledge-base-only crops",
+    "knowledgeOnlyLabel": "Not supported by the ML model",
+    "unverifiedNotice": "Agronomic details are unverified and are not recommendations.",
+    "sourceCount": "Source records: {{count}}",
+    "untitledSource": "Source without a title",
+    "loading": "Loading crop source status…",
+    "unavailable": "The crop catalog could not be loaded. No research-backed crop guidance is available."
+  },
+  "profitability": {
+    "title": "Compare crop economics",
+    "optionalTitle": "Optional: compare crop economics",
+    "optionalIntro": "Uses only values you enter. It does not assess crop suitability.",
+    "fieldArea": "Field area",
+    "areaUnit": "Area unit",
+    "acre": "acre",
+    "hectare": "hectare",
+    "cropNumber": "Crop option {{number}}",
+    "cropName": "Crop name",
+    "cropPlaceholder": "Enter a crop name",
+    "expectedYield": "Expected yield (kg per {{unit}})",
+    "sellingPrice": "Selling price (INR per kg)",
+    "totalCostInput": "Total estimated costs (INR for field)",
+    "fields": {
+      "crop": "crop name",
+      "area": "field area",
+      "yield": "expected yield",
+      "price": "selling price",
+      "cost": "total estimated costs"
+    },
+    "missing": "Enter these assumptions to calculate: {{fields}}. Blank costs are not treated as zero.",
+    "invalid": "Use finite, non-negative values; field area must be greater than zero.",
+    "revenue": "Estimated revenue",
+    "totalCost": "Total entered costs",
+    "netReturn": "Estimated net return",
+    "benefitCostRatio": "Benefit-cost ratio (revenue ÷ total cost)",
+    "notDefined": "Not defined (total cost is zero)",
+    "userEntered": "Source: user-entered assumptions. No external prices or yield data were retrieved.",
+    "formulaNote": "Revenue = area × yield per area unit × selling price. Net return = revenue − total costs; benefit-cost ratio = revenue ÷ total costs. Estimates are not guaranteed returns."
+  },
+  "limitations": {
+    "eyebrow": "Read before relying on a result",
+    "title": "A benchmark is not a field trial.",
+    "body": "The dataset's provenance has not been independently verified. Strong benchmark scores do not establish performance on real farms. Region and season are not model inputs. The current 22 labels do not cover every crop relevant to Uttar Pradesh, including wheat and mustard.",
+    "guidance": "Real crop choices also depend on local climate, soil testing, irrigation, season, and qualified agronomic guidance. Do not use this student model as the sole basis for a farming decision."
+  },
+  "empty": {
+    "title": "Prediction result",
+    "body": "Enter the seven required model inputs to run the crop classifier."
+  },
+  "workflow": {
+    "eyebrow": "Agricultural workflow",
+    "title": "Agricultural Field Assessment",
+    "statusChecking": "Checking connection",
+    "statusNotConnected": "Not connected",
+    "statusUnknown": "Status unavailable",
+    "unavailable": "Workflow status could not be retrieved. No assessment has been submitted.",
+    "messageNotConnected": "No workflow connection is configured. No field information has been submitted, and no assessment or clarification questions are available.",
+    "setupSummary": "What is needed to connect this workflow?",
+    "setupDetails": "Google's StreamAssist API can invoke registered Workflow Builder workflows and continue a session. However, required Manual Launch input variables cannot be supplied through the API. The workflow's trigger inputs, registered agent ID, backend identity and permission, and seven-field response format have not been verified. No request has been sent. Ask the workflow owner to confirm the trigger has no required inputs and that intake and clarification work from query text and session history. Backend configuration needs the project ID, app location and ID, and numeric workflow agent ID; credentials must use server-side Application Default Credentials.",
+    "docsLink": "StreamAssist workflow invocation documentation"
+  },
+  "footer": {
+    "project": "Built as a BTech CSE (AI/ML) project.",
+    "visualNote": "Decorative illustration only; no crop photograph is used."
+  }
+}
